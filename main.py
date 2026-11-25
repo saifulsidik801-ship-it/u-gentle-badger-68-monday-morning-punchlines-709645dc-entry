@@ -22,7 +22,7 @@ def main() -> None:
         raise ValueError(f"entry must be one line of 1-200 characters, got {len(text)}")
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(text, encoding="utf-8")
-    print(f"Wrote {len(text)} characters to {OUTPUT_PATH}")
+    print(f"Wrote {len(text)} characters to {OUTPUT_PATH}: {text}")
 
 
 if __name__ == "__main__":
